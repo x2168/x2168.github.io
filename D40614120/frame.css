@@ -1,0 +1,123 @@
+body {
+    margin:0px;
+}
+.Rf {
+    padding: 0px;
+    display: block;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 60%;
+    height: 50%;
+}
+.Img {
+    border:0px;
+}
+.Panel{
+    position:static;
+    width:50%;
+    height:50%;
+}
+.People{
+    position:relative;
+    right:550px;
+    bottom:150px;
+    width:5%;
+    height:5%;
+}
+.GateOpen {
+    width:auto;
+    height:75px;
+    
+}
+.GOPosition1{
+    position:relative;
+    right:700px;
+    bottom:65px;
+}
+.GOPosition2{
+    position:relative;
+    right:480px;
+    bottom:35px;
+}
+.GateClose{
+    width:75px;
+    height:auto;
+}
+.GCPosition1{
+    position:relative;
+    right:625px;
+    bottom:100px;
+}
+.GCPosition2{
+    position:relative;
+    right:400px;
+    bottom:60px;
+}
+.hidden {
+    z-index: -1;
+}
+.Car{
+    width:5%;
+    height:5%;
+}
+.CarPosition{
+    position:relative;
+    right:330px;
+    bottom:120px;
+}
+a{
+    
+    background-color:#ffd800;  
+    text-align:center;
+    border:1px solid #0094ff;
+    display:inline-block;
+    text-decoration: none;
+    
+} 
+a:hover,a:active{
+    background-color:#b6ff00;
+    text-decoration: none;
+}
+.BOPosition{
+    position:relative;
+    right:718px;
+    bottom:70px;
+}
+.AislePosition{
+    position:relative;
+    right:795px;
+    bottom:104px;
+}
+.LanePosition {
+    position:relative;
+    right:795px;
+    bottom:104px;
+}
+#Rise {
+    background-color:#00ff21;  
+}
+#Drop{
+    background-color:#ff006e;
+}
+.RisePosition {
+    position:relative;
+    left:235px;
+    bottom:285px;
+}
+.DropPosition {
+    position:relative;
+    left:237px;
+    bottom:285px;
+}
+.Plate{
+    position:absolute;
+    left:600px;
+    bottom:315px;
+    width:11%;
+    height:auto;
+}
+iframe{
+    position:absolute;
+    left:323px;
+    bottom:310px;
+}
