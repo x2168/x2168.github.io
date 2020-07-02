@@ -6,27 +6,36 @@
     <script>
       
       var opendoor=document.getElementByID("door").onclick();
+	  
       function Alert(){
         alert("Open Door!!!");
       }
       function welcome(){alert('歡迎光臨!!');}
- 
-    function up(){
+   
+	var opendoor=document.getElementByID("door").onclick();
+   
+	
+	
+	function control(value){
+		
+		var control_gate=document.getElementById('gate');
+		
+		if(value=='up'){
+		
+			alert("車到欄升!!，Gate消失!!");
+			control_gate.style.display='none';
+		
+		}else if(value=='down'){
+		
+		
+			alert("車到欄降!!,Gate出現!!!");
+			control_gate.style.display='block';
+		
+		}
+	
+	
+	}
 
-
-      alert("車到欄升!!");
-
-    }
-    function down(){
-
-      alert("車到欄降!!");
-
-
-    }
-
-
-
-     
 
 
     </script>
@@ -72,27 +81,27 @@
       border-color: #333 #999 #999 #333;
 
       }
-    
+    f
     </style>
 
   </head>
-  <body onload="welcome()">
+  <body onload="welcome();">
     
       <img src="panel.png" width="520" height="370" border="0" />
       <div id="dButton">
           <a href="#"><button onclick="Alert();"id="door"type="submit" name="DOOR" value="OPEN"><img src="dButton.png" width="50" height="15"></button></a>
       </div>
       <div style="position: absolute; left: 222px; top: 117px;"> 
-           <a href="#"><button id="btn1"type="submit" name="GATE" value="UP" onclick="up()"> <img src="gButtonUp.png" width="17" height="17"></button></a>
+           <a href="#"><button id="btn1"type="submit" name="GATE" value="UP" onclick="control('up')"> <img src="gButtonUp.png" width="17" height="17"></button></a>
       </div>
       <div style="position: absolute; left: 258px; top: 117px;">
-            <a href="#"><button type="submit" name="GATE" value="DOWN" onclick="down()"><img src="gButtonDown.png" width="17" height="17"></button></a>
+            <a href="#"><button type="submit" name="GATE" value="DOWN" onclick="control('down')"><img src="gButtonDown.png" width="17" height="17"></button></a>
       </div>	
       <div style="position: absolute; left: 8px; top: 85px;">
             <img src="dOpen.png" width="90" height="90">
       </div>
       <div style="position: absolute; left: 335px; top: 135px;">
-            <img src="Gate.png" width="190" height="10">
+            <img id="gate" src="Gate.png" width="190" height="10" >
       </div>
       <div style="position: absolute; left: 360px; top: 30px;">
             <img src="可變車牌.gif" width="70" height="100">
@@ -102,7 +111,7 @@
       </div>
 
       <div style="position: absolute; left: 295px; top: 205px;">
-        
+     
           
            <iframe id='show'width="220" height="165" src="https://www.youtube.com/embed/EREj1yO3Fwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div style='top:10px'>
